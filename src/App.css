@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 100vh;
+}
+
+.board {
+  width: 512px;
+  height: 512px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell img {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.black {
+  background-color: rgb(78, 37, 9);
+}
+
+.white {
+  background-color: #deb887;
+}
+
+.selected {
+  z-index: 5;
+  outline: 4px solid darkblue;
+  border-radius: 4px;
+}
+
+.selected.white {
+  background-color: #f8dbb5;
+}
+
+.selected.black {
+  background-color: rgb(114, 57, 20);
+}
+
+.available {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #22c022;
+}
+
+.player-title {
+  margin-bottom: 24px;
+  font-size: 36px;
+}
+
+.lost-figures {
+  width: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  background-color:  lightgray;
+}
+
+.lost-figures-container {
+  max-width: 512px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-left: 17px;
+  box-sizing: border-box;
+}
+
+.lost-figure {
+  width: 64px;
+  height: 64px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.lost-figure-logo {
+  width: 20px;
+  order: -1;
+}
